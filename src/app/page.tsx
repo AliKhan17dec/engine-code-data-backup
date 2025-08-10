@@ -25,6 +25,7 @@ import ReliabilityIssues from "@/components/reliability-issues";
 import FAQs from "@/components/faqs";
 import ResearchResources from "@/components/research-resources";
 import { Metadata } from "next";
+import Overview from "@/components/overview";
 
 export const metadata: Metadata = {
   title: "N47D20A Engine Review 2025 | HP, Torque, Common Issues",
@@ -32,6 +33,14 @@ export const metadata: Metadata = {
     "Complete database & guide to BMW N47D20A: specs, compatible models (1 Series, 3 Series, X3), common problems. Known for fuel efficiency & tuning potential.",
 };
 
+export function SpecLine(props: { label: string; value: string | number }) {
+  return (
+    <div className="flex items-center justify-between py-2">
+      <span className="font-medium">{props.value}</span>
+      <span className="text-muted-foreground">{props.label}</span>
+    </div>
+  );
+}
 const engine = {
   name: "BMW N47D20A Engine (2007-2011) - Specs, Problems & Compatibility Database",
   code: "N47D20A",
@@ -56,15 +65,6 @@ const engine = {
     reference: "BMW SIB 11 02 17",
   },
 };
-
-function SpecLine(props: { label: string; value: string | number }) {
-  return (
-    <div className="flex items-center justify-between py-2">
-      <span className="text-muted-foreground">{props.label}</span>
-      <span className="font-medium">{props.value}</span>
-    </div>
-  );
-}
 
 export default function Page() {
   const jsonLd = {
@@ -140,7 +140,7 @@ export default function Page() {
               <li className="text-foreground font-medium">{engine.code}</li>
             </ol>
           </nav>
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+          <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
             {engine.name}
           </h1>
           <p className="max-w-2xl text-muted-foreground">
@@ -163,73 +163,16 @@ export default function Page() {
             </Badge>
           </div>
         </div>
-        <MetaPanel
-          title="N47D20A Engine Review 2025 | HP, Torque, Common Issues"
-          description="Complete database & guide to BMW N47D20A: specs, compatible models (1 Series, 3 Series, X3), common problems. Known for fuel efficiency & tuning potential."
-        />
+        {/* <MetaPanel */}
+        {/*   title="N47D20A Engine Review 2025 | HP, Torque, Common Issues" */}
+        {/*   description="Complete database & guide to BMW N47D20A: specs, compatible models (1 Series, 3 Series, X3), common problems. Known for fuel efficiency & tuning potential." */}
+        {/* /> */}
       </div>
 
-      <Card className="mb-8 overflow-hidden">
-        <div className="relative w-full">
-          <Image
-            src="/placeholder.svg?height=400&width=1280"
-            width={1280}
-            height={400}
-            alt="BMW N47D20A engine illustration"
-            className="h-56 w-full object-cover md:h-72"
-            priority
-          />
-        </div>
-        <CardContent className="grid gap-6 p-6 md:grid-cols-3">
-          <div className="md:col-span-2 space-y-4">
-            <h2 className="text-lg font-semibold">Overview</h2>
-            <p className="text-sm text-muted-foreground">
-              The BMW N47D20A is a 1,995 cc turbocharged diesel engine produced
-              from 2007 to 2011. This inline‑4 powerplant features a variable
-              geometry turbocharger (VGT), common‑rail direct injection, and
-              dual overhead camshafts. Outputs ranged from 120 kW (163 PS) in
-              base variants to 135 kW (184 PS) in high‑tune applications, with
-              peak torque spanning 350–380 Nm. Primary applications include the
-              E87 1 Series, E90 3 Series, and E60 5 Series, notably powering the
-              118d, 320d, and 520d models. Engineered for executive vehicles
-              requiring balance between performance and efficiency, the N47D20A
-              achieved Euro 4 emissions certification through EGR and diesel
-              particulate filtration. Post‑2010 models received minor revisions
-              before transitioning to the N47N variant with reinforced timing
-              components.
-            </p>
-            <div className="flex flex-wrap gap-2 pt-1">
-              <Badge>{engine.code}</Badge>
-              <Badge variant="secondary">Diesel</Badge>
-              <Badge variant="outline">Common‑rail</Badge>
-              <Badge variant="outline">VGT Turbo</Badge>
-            </div>
-          </div>
-          <div className="rounded-lg border p-4">
-            <h3 className="mb-3 text-sm font-semibold">Quick Specs</h3>
-            <div className="divide-y">
-              <SpecLine
-                label="Displacement"
-                value={`${engine.displacementCc} cc`}
-              />
-              <SpecLine label="Configuration" value={engine.configuration} />
-              <SpecLine label="Aspiration" value="Turbocharged (VGT)" />
-              <SpecLine label="Injection" value={engine.injection} />
-              <SpecLine
-                label="Power"
-                value={`${engine.power.kw} (${engine.power.ps})`}
-              />
-              <SpecLine label="Torque" value={engine.torqueNm} />
-              <SpecLine label="Emissions" value={engine.emissions} />
-              <SpecLine label="Production" value={engine.years} />
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
+      <Overview engine={engine} />
       <TechnicalSpecs />
 
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-3 mt-6">
         <div className="md:col-span-2 space-y-8">
           <ReliabilityIssues />
 
