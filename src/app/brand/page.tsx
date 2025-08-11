@@ -7,6 +7,7 @@ import CompatibleModels from "@/app/brand/components/CompatibleModels";
 import CommonReliabilityIssues from "./components/CommonReliabilityIssues";
 import Hero from "./components/Hero";
 import FAQs from "./components/FAQs";
+import ResearchResources from "./components/ResearchResources";
 
 export const metadata: Metadata = {
   title: "N47D20A Engine Review 2025 | HP, Torque, Common Issues",
@@ -168,6 +169,7 @@ const Page = (): JSX.Element => {
       <CompatibleModels compatibleModels={compatibleModels} />
       <CommonReliabilityIssues issues={issues} />
       <FAQs faqData={faqData} />
+      <ResearchResources />
     </>
   );
 };
