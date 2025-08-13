@@ -1,34 +1,44 @@
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 import { JSX } from "react";
-import { FAQItem } from "../types";
 import Container from "@/components/Container";
 
 const FAQs = ({ faqData }: { faqData: FAQItem[] }): JSX.Element => {
   return (
     <Container>
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-relaxed text-center mb-6">
           Frequently Asked Questions
-        </h2>
-        <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        </h1>
+        <p className="text-muted-foreground mb-8 text-lg leading-relaxed text-center">
           Find answers to common questions about our products, shipping, and
           policies.
         </p>
       </div>
 
-      <div className="space-y-6">
-        {faqData.map((item, index) => (
-          <Card key={index} className="border-l-4 border-l-primary">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                {item.question}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
+      <div className="space-y-2 pb-4">
+        <Accordion type="single" collapsible className="space-y-2">
+          {faqData.map((item, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="border-2 border-border rounded-xl shadow-sm "
+            >
+              <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                <h3 className="text-xl font-semibold text-foreground">
+                  {item.question}
+                </h3>
+              </AccordionTrigger>
+              <AccordionContent className="px-6 pb-4 text-muted-foreground leading-relaxed">
                 {item.answer}
-              </p>
-            </CardContent>
-          </Card>
-        ))}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
 
       {/* <div className="mt-12 text-center"> */}

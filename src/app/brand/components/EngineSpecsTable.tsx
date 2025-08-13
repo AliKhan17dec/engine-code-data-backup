@@ -17,7 +17,7 @@ export function EngineSpecsTable({ data }: EngineSpecsTableProps) {
   const columns = Object.keys(data[0]);
 
   return (
-    <div className="w-full max-w-5xl my-6 mx-auto">
+    <div className="w-full  my-6 mx-auto text-8xl">
       <div className="rounded-2xl shadow-lg border border-border overflow-hidden">
         <Table className="w-full table-fixed">
           <TableHeader className="bg-[#383838]">
