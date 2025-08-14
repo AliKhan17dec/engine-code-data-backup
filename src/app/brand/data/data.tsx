@@ -161,6 +161,7 @@ creating interchange limitations with pre-LCI models.`,
                 03/2009 are incompatible with later units due to guide rail
                 redesign (BMW SIB 12 03 15).`,
       },
+      bannerImage: "/placeholder.svg?height=400&width=1280",
       commonReliabilityIssues: {
         heading: "Common Reliability Issues - BMW N47D20A",
         subheading: `BMW's 2012 internal quality audit (Report #QI-N47-12) revealed 22% of pre-2010 units required timing chain repairs before 120,000 km. UK DVSA data (2015-2023) shows EGR valve clogging accounts for 31% of emissions-related MOT failures in urban-use vehicles. Cold-start oil starvation exacerbates timing component wear in stop-start traffic cycles, with failure rates 3.8× higher in metropolitan areas versus rural use (DVSA 2019 Diesel Systems Analysis).`,

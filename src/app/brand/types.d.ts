@@ -99,6 +99,7 @@ declare interface EnginePageData {
   hero: HeroData;
   technicalSpecifications: TechnicalSpecsData;
   compatibleModels: CompatibleModelsData;
+  bannerImage: string;
   commonReliabilityIssues: CommonReliabilityIssuesData;
   faqs: FAQItem[];
   researchResources: ResourceSection[];

@@ -8,22 +8,33 @@ import FAQs from "./components/FAQs";
 import ResearchResources from "./components/ResearchResources";
 import { pageData } from "./data/data";
 import Banner from "./components/Banner";
+import StickyButton from "./components/StickyButton";
 
 const brand = "bmw";
 const engine = "n47d20a";
-const engineData = pageData[brand][engine];
-export const metadata: Metadata = engineData.metadata;
+const {
+  hero,
+  technicalSpecifications,
+  compatibleModels,
+  bannerImage,
+  commonReliabilityIssues,
+  faqs,
+  researchResources,
+} = pageData[brand][engine];
+
+export const metadata: Metadata = pageData[brand][engine].metadata;
 
 const Page = (): JSX.Element => {
   return (
     <>
-      <Hero {...engineData.hero} />
-      <TechnicalSpecifications {...engineData.technicalSpecifications} />
-      <Banner />
-      <CompatibleModels {...engineData.compatibleModels} />
-      <CommonReliabilityIssues {...engineData.commonReliabilityIssues} />
-      <FAQs faqData={engineData.faqs} />
-      <ResearchResources sections={engineData.researchResources} />
+      <StickyButton />
+      <Hero {...hero} />
+      <TechnicalSpecifications {...technicalSpecifications} />
+      <CompatibleModels {...compatibleModels} />
+      <Banner bannerImage={bannerImage} />
+      <CommonReliabilityIssues {...commonReliabilityIssues} />
+      <FAQs faqData={faqs} />
+      <ResearchResources sections={researchResources} />
     </>
   );
 };
