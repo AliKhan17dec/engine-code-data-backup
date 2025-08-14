@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import { EngineSpecsTable } from "./EngineSpecsTable";
-import Container from "../../../components/Container";
+import Container from "@/components/Container";
 import { H1, H6, P, SH } from "@/components/Typography";
 
 const CompatibleModels = ({

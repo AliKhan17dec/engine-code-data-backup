@@ -1,5 +1,4 @@
 import { JSX } from "react";
-import Container from "../../../components/Container";
 import {
   Card,
   CardContent,
@@ -8,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { H1, P, SH, Strong } from "@/components/Typography";
+import Container from "@/components/Container";
 
 const CommonReliabilityIssues = ({
   issues,

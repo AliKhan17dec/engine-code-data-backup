@@ -6,7 +6,12 @@ import { JSX } from "react";
 import { H1, H6, P, SH } from "@/components/Typography";
 import Link from "next/link";
 
-const Hero = ({ heading, intro, image, disclaimer }: HeroData): JSX.Element => {
+const Hero = ({
+  heading,
+  intro,
+  image,
+  disclaimer,
+}: HeroDataProps): JSX.Element => {
   return (
     <Container>
       <div className="flex flex-col lg:flex-row gap-12">

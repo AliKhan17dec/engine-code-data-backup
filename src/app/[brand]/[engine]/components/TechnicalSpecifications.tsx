@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import Container from "../../../components/Container";
+import Container from "@/components/Container";
 import { EngineSpecsTable } from "./EngineSpecsTable";
 import { H1, SH, P, H6 } from "@/components/Typography";
 
