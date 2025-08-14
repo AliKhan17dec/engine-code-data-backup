@@ -2,7 +2,7 @@
 
 import { pageData } from "@/app/data/data";
 
-export function getEnginePageData(brand: string, engine: string) {
+export const getEnginePageData = async (brand: string, engine: string) => {
   const brandData = pageData[brand];
 
   if (!brandData || !brandData.engines || !brandData.engines[engine]) {
@@ -19,8 +19,8 @@ export function getEnginePageData(brand: string, engine: string) {
       image: brandHeroImage,
     },
   };
-}
-export function getAllEngineSlugs() {
+};
+export const getAllEngineSlugs = async () => {
   const slugs = [];
 
   for (const brandKey in pageData) {
@@ -35,4 +35,4 @@ export function getAllEngineSlugs() {
   }
 
   return slugs;
-}
+};

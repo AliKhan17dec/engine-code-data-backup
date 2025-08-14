@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"; // adjust path as needed
+import { cn } from "@/app/lib/utils"; // adjust path as needed
 import React from "react";
 
 interface WrapperProps extends React.HTMLAttributes<HTMLDivElement> {
