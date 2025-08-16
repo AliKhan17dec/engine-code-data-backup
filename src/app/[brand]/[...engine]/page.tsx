@@ -9,30 +9,35 @@ import Banner from "./components/Banner";
 import CommonReliabilityIssues from "./components/CommonReliabilityIssues";
 import FAQs from "./components/FAQs";
 import ResearchResources from "./components/ResearchResources";
+import { JSX } from "react";
 
-async function generateStaticParams() {
+const generateStaticParams = async (): Promise<EnginePageProps[]> => {
   const slugs = await getAllEngineSlugs();
 
   return slugs.map(({ brand, engine }) => ({
     brand,
-    engine,
+    engine: [`${engine}-specs`],
   }));
-}
+};
 
-async function generateMetadata(props: {
-  params: Promise<{ brand: string; engine: string }>;
-}): Promise<Metadata> {
+const generateMetadata = async (props: {
+  params: Promise<EnginePageProps>;
+}): Promise<Metadata> => {
   const params = await props.params;
-  const engineData = await getEnginePageData(params.brand, params.engine);
+  const engineParam = params.engine.join("-");
+  const engine = engineParam.replace(/-specs$/, "");
+  const engineData = await getEnginePageData(params.brand, engine);
   if (!engineData) notFound();
   return engineData.metadata;
-}
+};
 
-async function EnginePage(props: {
-  params: Promise<{ brand: string; engine: string }>;
-}) {
+const EnginePage = async (props: {
+  params: Promise<EnginePageProps>;
+}): Promise<JSX.Element> => {
   const params = await props.params;
-  const engineData = await getEnginePageData(params.brand, params.engine);
+  const engineParam = params.engine.join("-");
+  const engine = engineParam.replace(/-specs$/, "");
+  const engineData = await getEnginePageData(params.brand, engine);
   if (!engineData) notFound();
 
   const {
@@ -47,7 +52,7 @@ async function EnginePage(props: {
 
   return (
     <>
-      <StickyButton engineKey={params.engine} />
+      <StickyButton engineCode={engine} />
       <Hero {...hero} />
       <TechnicalSpecifications {...technicalSpecifications} />
       <CompatibleModels {...compatibleModels} />
@@ -57,8 +62,8 @@ async function EnginePage(props: {
       <ResearchResources sections={researchResources} />
     </>
   );
-}
-export const dynamicParams = false;
+};
 
+export const dynamicParams = false;
 export default EnginePage;
 export { generateStaticParams, generateMetadata };

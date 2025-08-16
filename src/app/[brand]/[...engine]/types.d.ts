@@ -247,3 +247,8 @@ interface BrandData {
 }
 
 type EnginePageDataOrNull = EnginePageData | null;
+
+interface EnginePageProps {
+  brand: string;
+  engine: string[];
+}

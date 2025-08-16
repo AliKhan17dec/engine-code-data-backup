@@ -1,5 +1,4 @@
-// lib/engine-data.ts
-
+"use server";
 import { pageData } from "@/app/data/data";
 
 export const getEnginePageData = async (brand: string, engine: string) => {
@@ -20,7 +19,9 @@ export const getEnginePageData = async (brand: string, engine: string) => {
     },
   };
 };
-export const getAllEngineSlugs = async () => {
+export const getAllEngineSlugs = async (): Promise<
+  { brand: string; engine: string }[]
+> => {
   const slugs = [];
 
   for (const brandKey in pageData) {

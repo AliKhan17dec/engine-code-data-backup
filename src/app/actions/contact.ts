@@ -1,62 +1,46 @@
-// app/actions/contact.ts
 "use server";
 
-import { ZodError, z } from "zod";
-
+import { z } from "zod";
 const schema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.string().email("Invalid email address"),
+  engineCode: z.string().min(1, { message: "Engine code is required" }),
+  name: z.string().min(1, { message: "Name is required" }),
+  email: z.string().min(1, { message: "Email is required" }),
   phone: z.string().optional(),
-  vehicle: z.string().optional(),
   message: z.string().optional(),
-  engineKey: z.string().min(1),
 });
 
-export type FormState = {
-  success?: boolean;
-  message?: string;
-  errors?: {
-    name?: string[];
-    email?: string[];
-    phone?: string[];
-    vehicle?: string[];
-    message?: string[];
-    engineKey?: string[];
-  };
-};
-
-export async function submitQuotationForm(
-  prevState: FormState,
-  formData: FormData,
-): Promise<FormState> {
+export async function submitQuotationForm(formData: FormData): Promise<void> {
+  console.log(formData);
   try {
-    // Validate form data
     const data = schema.parse({
       name: formData.get("name"),
       email: formData.get("email"),
       phone: formData.get("phone"),
       vehicle: formData.get("vehicle"),
       message: formData.get("message"),
-      engineKey: formData.get("engineKey"),
+      engineCode: formData.get("engineCode"),
     });
 
-    // TODO: Send email, save to DB, etc.
-    console.log("Form data:", data);
+    // TODO: Handle your business logic
+    console.log("Form submitted:", data);
 
-    // Simulate success
-    return {
-      success: true,
-      message: "Thank you! We will contact you shortly.",
-    };
+    // Server Actions must return void
   } catch (error) {
-    if (error instanceof ZodError) {
-      return {
-        errors: error.flatten().fieldErrors,
-      };
-    }
+    if (error instanceof z.ZodError) {
+      // Modern error handling for Zod v4
+      const fieldErrors: Record<string, string[]> = {};
 
-    return {
-      message: "Something went wrong. Please try again.",
-    };
+      for (const issue of error.issues) {
+        const key = issue.path[0] as string;
+        if (!fieldErrors[key]) {
+          fieldErrors[key] = [];
+        }
+        fieldErrors[key].push(issue.message);
+      }
+
+      console.error("Validation errors:", fieldErrors);
+    } else {
+      console.error("Submission error:", error);
+    }
   }
 }
