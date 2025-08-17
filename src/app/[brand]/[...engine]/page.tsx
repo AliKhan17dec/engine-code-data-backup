@@ -56,7 +56,7 @@ const EnginePage = async (props: {
       <Hero {...hero} />
       <TechnicalSpecifications {...technicalSpecifications} />
       <CompatibleModels {...compatibleModels} />
-      <Banner bannerImage={bannerImage} />
+      <Banner hidden bannerImage={bannerImage} />
       <CommonReliabilityIssues {...commonReliabilityIssues} />
       <FAQs faqData={faqs} />
       <ResearchResources sections={researchResources} />

@@ -1,144 +1,13 @@
-// declare type Icon = React.ComponentType<React.SVGProps<SVGSVGElement>>;
-//
-// declare interface Issue {
-//   title: string;
-//   cause: string;
-//   fix: string;
-//   fixIcon: Icon;
-//   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-// }
-//
-// declare type TableCellValue = string | number | null | undefined;
-//
-// declare interface TableRowData {
-//   [key: string]: TableCellValue;
-// }
-//
-// declare type TableData = TableRowData[];
-//
-// declare interface FAQItem {
-//   question: string;
-//   answer: string;
-// }
-//
-// declare interface TechnicalSpecsData {
-//   title: string;
-//   description: string;
-//   engineSpecs: TableData;
-//   practicalImplications: {
-//     heading: string;
-//     content: string;
-//     icon?: React.JSX.Element;
-//   };
-// }
-//
-// declare interface CompatibleModelsData {
-//   title: string;
-//   description: string;
-//   compatibleModels: TableData;
-//   guidanceTitle: string;
-//   guidanceText: string;
-// }
-//
-// declare interface InfoBlock {
-//   title: string;
-//   description: string;
-//   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-//   gradient: string;
-// }
-//
-// declare interface CommonReliabilityIssuesData {
-//   issues: Issue[];
-//   heading: string;
-//   subheading: string;
-//   infoBlock: InfoBlock;
-// }
-//
-// declare interface ResourceContent {
-//   title: string;
-//   description?: string;
-//   link?: string;
-// }
-//
-// declare interface ResourceLink {
-//   title: string;
-//   href: string;
-// }
-//
-// declare type CategoryType = "link" | "text-block" | "mixed";
-//
-// declare interface ResourceCategory {
-//   title: string;
-//   icon: React.ReactNode;
-//   type: CategoryType;
-//   links?: ResourceLink[];
-//   content?: ResourceContent[];
-// }
-//
-// declare interface ResourceSection {
-//   title: string;
-//   icon: React.ReactNode;
-//   description: string;
-//   categories: ResourceCategory[];
-// }
-// declare interface HeroData {
-//   heading: string;
-//   intro: string;
-//   // image: {
-//   //   src: string;
-//   //   alt: string;
-//   // };
-//   disclaimer: {
-//     title: string;
-//     text: string;
-//   };
-// }
-// declare interface HeroDataProps {
-//   heading: string;
-//   intro: string;
-//   image: {
-//     src: string;
-//     alt: string;
-//   };
-//   disclaimer: {
-//     title: string;
-//     text: string;
-//   };
-// }
-//
-// declare interface EnginePageData {
-//   metadata: Metadata;
-//   hero: HeroData;
-//   technicalSpecifications: TechnicalSpecsData;
-//   compatibleModels: CompatibleModelsData;
-//   bannerImage: string;
-//   commonReliabilityIssues: CommonReliabilityIssuesData;
-//   faqs: FAQItem[];
-//   researchResources: ResourceSection[];
-// }
-// declare interface BrandData {
-//   heroImage: {
-//     src: string;
-//     alt: string;
-//   };
-//   engines: Record<string, EnginePageData>;
-// }
-// declare type enginePageData = {
-//   hero: HeroData;
-//   metadata: Metadata;
-//   technicalSpecifications: TechnicalSpecsData;
-//   compatibleModels: CompatibleModelsData;
-//   bannerImage: string;
-//   commonReliabilityIssues: CommonReliabilityIssuesData;
-//   faqs: FAQItem[];
-//   researchResources: ResourceSection[];
-// } | null;
-type Icon = React.ComponentType<React.SVGProps<SVGSVGElement>>;
+type Icon = React.ComponentType<
+  React.SVGProps<SVGSVGElement<{ className?: string }>>
+>;
+
 type TableCellValue = string | number | null | undefined;
 type TableData = Record<string, TableCellValue>[];
 
 interface Issue {
   title: string;
+  symptoms: string;
   cause: string;
   fix: string;
   icon: Icon;
@@ -165,6 +34,8 @@ interface TechnicalSpecsData {
     heading: string;
     content: string;
     icon?: React.JSX.Element;
+    dataVerificationNotes: Record<string, string>;
+    primarySources: string[];
   };
 }
 
@@ -174,6 +45,21 @@ interface CompatibleModelsData {
   compatibleModels: TableData;
   guidanceTitle: string;
   guidanceText: string;
+  identificationDetails: {
+    location: string;
+    visualCues: string[];
+    evidence: string;
+  };
+  compatibilityNotes: {
+    flywheel: string;
+    timingComponents: string;
+    evidence: string;
+  };
+  tensionerUpgrade: {
+    issue: string;
+    recommendation: string;
+    evidence: string;
+  };
 }
 
 interface CommonReliabilityIssuesData {
@@ -213,7 +99,7 @@ interface ResourceSection {
 
 interface HeroData {
   heading: string;
-  intro: string;
+  intro: string[];
   disclaimer: {
     title: string;
     text: string;

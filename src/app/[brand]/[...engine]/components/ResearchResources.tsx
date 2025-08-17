@@ -101,12 +101,9 @@ export default function ResearchResources({
       </div>
 
       {/* === FULL-WIDTH VERIFICATION CARD === */}
-      <Card
-        className="mt-10 border-l-4 border-l-green-500 bg-gradient-to-r from-green-50/50 to-transparent dark:from-green-900/20"
-        id="verification-note"
-      >
+      <Card className="mt-10 " id="verification-note">
         <CardHeader>
-          <CardTitle className="text-xl flex items-center gap-2 text-green-800 dark:text-green-200">
+          <CardTitle className="text-xl flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -128,11 +125,7 @@ export default function ResearchResources({
           <p className="text-muted-foreground leading-relaxed">
             All specifications and compatibility data verified against official
             BMW documentation and EU/UK regulatory texts. Where official data is
-            unavailable, entries are marked{" "}
-            <code className="bg-gray-100 dark:bg-gray-800 px-1 rounded text-sm font-semibold">
-              &ldquo;Undisclosed&ldquo;
-            </code>
-            .
+            unavailable, entries are marked &ldquo;Undisclosed&ldquo; .
           </p>
         </CardContent>
       </Card>

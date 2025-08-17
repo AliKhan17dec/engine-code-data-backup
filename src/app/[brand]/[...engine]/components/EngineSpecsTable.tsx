@@ -19,8 +19,11 @@ export function EngineSpecsTable({ data }: EngineSpecsTableProps) {
   const columns = Object.keys(data[0]);
 
   return (
-    <div aria-label="Desktop-Table" className="w-full my-6 mx-auto">
-      <div className="rounded-2xl shadow-lg border border-border overflow-hidden hidden lg:block">
+    <div className="w-full my-6 mx-auto">
+      <div
+        aria-label="Desktop-Table"
+        className="rounded-2xl shadow-lg border border-border overflow-hidden hidden lg:block"
+      >
         <Table className="w-full table-fixed">
           <TableHeader className="bg-[#383838]">
             <TableRow>
@@ -60,13 +63,10 @@ export function EngineSpecsTable({ data }: EngineSpecsTableProps) {
       </div>
       <div aria-label="Mobile Table" className="lg:hidden space-y-4 mx-auto">
         {data.map((row, rowIndex) => {
-          // Check if the last column is a source column
           const isSourceColumn =
             columns.length > 0 &&
             (columns[columns.length - 1].toLowerCase() === "source" ||
               columns[columns.length - 1].toLowerCase() === "oem source");
-
-          // Columns to display in the main card (excluding source if applicable)
           const displayColumns = isSourceColumn
             ? columns.slice(0, -1)
             : columns;
@@ -84,7 +84,7 @@ export function EngineSpecsTable({ data }: EngineSpecsTableProps) {
                 <div className="space-y-2">
                   {displayColumns.map((col) => (
                     <div key={String(col)} className="flex">
-                      <div className="font-medium text-[#d0d0d0] w-1/3 truncate">
+                      <div className="font-bold text-[#d0d0d0] w-1/3 truncate">
                         {String(col).charAt(0).toUpperCase() +
                           String(col).slice(1)}
                         :
@@ -93,14 +93,13 @@ export function EngineSpecsTable({ data }: EngineSpecsTableProps) {
                     </div>
                   ))}
 
-                  {/* Source information - collapsed by default */}
                   {isSourceColumn && sourceValue && (
                     <details className="mt-2 pt-2 border-t border-border">
-                      <summary className="cursor-pointer flex items-center text-primary hover:underline list-none">
+                      <summary className="cursor-pointer flex items-center justify-center text-primary hover:underline list-none">
                         <FileText className="h-4 w-4 mr-1" />
                         View Source
                       </summary>
-                      <div className="mt-2 pl-5 text-sm text-muted-foreground break-words">
+                      <div className="mt-2 pl-5 text-sm text-muted-foreground break-words text-center">
                         {sourceValue}
                       </div>
                     </details>
