@@ -604,7 +604,7 @@ and efficient cruising. Designed to meet Euro 4 (and some market‑specific Euro
       serviceBulletin: "https://www.bmw-tech.org/tsb",
     },
     engines: {
-      b9000: {
+      "182b9000": {
         metadata: {
           title:
             "Alfa Romeo 182 B9.000 Engine Guide 2025 | Specs, Issues, Models",
@@ -2373,7 +2373,7 @@ and efficient cruising. Designed to meet Euro 4 (and some market‑specific Euro
           ],
         },
       },
-      "330a1000": {
+      "198a1000": {
         metadata: {
           title:
             "Alfa Romeo 198 A1.000 Engine Guide 2025 | Specs, Issues, Models",
@@ -5306,7 +5306,7 @@ Developed before formal emissions regulations, it prioritizes mechanical perform
           ],
         },
       },
-      b1000: {
+      "199b1000": {
         metadata: {
           title:
             "Alfa Romeo 199 B1.000 Engine Guide 2025 | Specs, Issues, Models",
@@ -8221,7 +8221,7 @@ Designed to meet Euro 1 emissions standards, it balances spirited performance wi
           ],
         },
       },
-      a1000: {
+      "330a1000": {
         metadata: {
           title: "Alfa Romeo A1.000 Engine Guide 2025 | Specs, Issues, Models",
           description: `Official technical database for Alfa Romeo A1.000 (2016–present): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
@@ -12829,7 +12829,7 @@ Designed to meet Euro 4 emissions standards, it balances sporty driving dynamics
           ],
         },
       },
-      "55273835diesel": {
+      "55273835": {
         metadata: {
           title:
             "Alfa Romeo 552 73 835 – Diesel Engine Guide 2025 | Specs, Issues, Models",
@@ -14566,7 +14566,7 @@ Designed to meet Euro 5 standards, it balances sporty character with everyday ec
           ],
         },
       },
-       "55283099diesel": {
+       "55283099": {
         metadata: {
           title: "Alfa Romeo 552 83 099 – Diesel Engine Guide 2025 | Specs, Issues, Models",
           description: `Official technical database for Alfa Romeo 552 83 099 – Diesel (2016–2020): verified specs, compatible models, common failures. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
