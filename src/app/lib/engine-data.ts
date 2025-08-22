@@ -9,14 +9,9 @@ export const getEnginePageData = async (brand: string, engine: string) => {
   }
 
   const engineData = brandData.engines[engine];
-  const brandHeroImage = brandData.heroImage;
 
   return {
     ...engineData,
-    hero: {
-      ...engineData.hero,
-      image: brandHeroImage,
-    },
     researchResources: {
       ...brandData.researchResources,
     },
