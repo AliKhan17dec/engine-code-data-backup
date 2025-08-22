@@ -103,6 +103,10 @@ interface HeroData {
     title: string;
     text: string;
   };
+  image: {
+    src: string;
+    alt: string;
+  };
 }
 
 interface HeroDataProps extends HeroData {
@@ -318,10 +322,6 @@ interface ResearchResourcesShort {
   serviceBulletin: string;
 }
 interface BrandData {
-  heroImage: {
-    src: string;
-    alt: string;
-  };
   researchResources: ResearchResourcesShort;
   engines: Record<string, EnginePageData>;
 }
