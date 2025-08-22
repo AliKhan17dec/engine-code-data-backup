@@ -1,9 +1,5 @@
 export const pageData: Record<string, BrandData> = {
   bmw: {
-    heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
-    },
     researchResources: {
       serviceManual: "https://www.bmw-tech.org/goto/manuals/n47",
       serviceBulletin: "https://www.bmw-tech.org/tsb",
@@ -15,6 +11,10 @@ export const pageData: Record<string, BrandData> = {
           description: `Official technical database for BMW B36 B07 A (2019-2022): verified specs, compatible models, common failure. Sources from BMW TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2019-2022)",
           intro: [
             `The BMW B36 B07 A is a 2,993 cc, inline‑six turbocharged petrol engine produced between 2019 and 2022.
@@ -602,6 +602,10 @@ Designed to meet Euro 6d-TEMP, it balances performance with emissions compliance
           description: `Official technical database for BMW B37 C15 A (2018–2023): verified specs, compatible models, common failure. Sources from BMW TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The BMW B37 C15 A is a 1,496 cc, inline-three turbocharged diesel engine produced from 2018 to 2023.
@@ -1189,6 +1193,10 @@ Designed to meet Euro 6d-ISC-FCM, it balances efficiency with modern emissions c
           description: `Complete database & guide to BMW B37 D15 A: specs, compatible models, common problems.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2014–2020)",
           intro: [
             `The BMW B37 D15 A is a 1,496 cc, inline-three turbo-diesel engine produced between 2014 and 2020.
@@ -1785,6 +1793,10 @@ and high fuel efficiency. Designed to meet Euro 6 standards, it balances city dr
           description: `Official technical database for BMW B38 A15 A (2014-present): verified specs, compatible models, common failure. Sources from BMW TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2014–present)",
           intro: [
             `The BMW B38 A15 A is a 1,499 cc, inline-three turbocharged petrol engine introduced in 2014 as part of BMW's modular engine family.
@@ -2381,6 +2393,10 @@ Designed to meet Euro 6 standards, it balances urban drivability with fuel econo
           description: `Official technical database for BMW B38 B15 A (2014-present): verified specs, compatible models, common failure. Sources from BMW TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2014–present)",
           intro: [
             `The BMW B38 B15 A is a 1,499 cc, inline-three turbocharged petrol engine introduced in 2014 as part of BMW's modular engine family.
@@ -2958,6 +2974,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for BMW B42 S20 A (2015–2020): verified specs, compatible models, common failures. Sourced from BMW TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2015–2020)",
           intro: [
             `The BMW B42 S20 A is a 1,998 cc, inline-four naturally aspirated petrol engine produced between 2015 and 2020.`,
@@ -3495,10 +3515,6 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
     },
   },
   "alfa-romeo": {
-    heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
-    },
     researchResources: {
       serviceManual: "https://www.bmw-tech.org/goto/manuals/n47",
       serviceBulletin: "https://www.bmw-tech.org/tsb",
@@ -3511,6 +3527,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 182 B9.000 (2007-2011): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2007–2011)",
           intro: [
             `The Alfa Romeo 182 B9.000 is a 1,749 cc, inline-four petrol engine produced between 2007 and 2011.
@@ -4113,6 +4133,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 192 B1.000 (1954–1960): verified specifications, compatible models, common failure points. Sourced from Alfa Romeo historical archives, ASI documentation, and recognized engineering standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1954–1960)",
           intro: [
             `The Alfa Romeo 192 B1.000 is a 1,296 cc, inline-four, naturally aspirated petrol engine produced between 1954 and 1960.
@@ -4693,6 +4717,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 192 A5.000 (1980-1985): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1980-1985)",
           intro: [
             `The Alfa Romeo 192 A5.000 is a 1,995 cc, inline-four petrol engine produced between 1980 and 1985.
@@ -5280,6 +5308,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 198 A1.000 (2007-2011): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2007–2011)",
           intro: [
             `The Alfa Romeo 198 A1.000 is a 1,742 cc, inline-four petrol engine produced between 2007 and 2011.
@@ -5882,6 +5914,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 198 A2.000 (1960–1967): verified specifications, compatible models, common failure points. Sourced from Alfa Romeo historical archives, ASI documentation, and recognized engineering standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1960–1967)",
           intro: [
             `The Alfa Romeo 198 A2.000 is a 1,962 cc, inline-four, naturally aspirated petrol engine produced between 1960 and 1967.
@@ -6460,6 +6496,10 @@ Designed to meet Euro 6 standards, it balances sporty driving dynamics with mode
           description: `Official technical database for Alfa Romeo 198 A4.000 (1978-1982): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1978-1982)",
           intro: [
             `The Alfa Romeo 198 A4.000 is a 1,790 cc, inline-four petrol engine produced between 1978 and 1982.
@@ -7048,6 +7088,10 @@ Designed to meet early European emissions standards, it balances sporty characte
           description: `Official technical database for Alfa Romeo 199 A6.000 (1983-1989): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1983-1989)",
           intro: [
             `The Alfa Romeo 199 A6.000 is a 2,492 cc, inline-four petrol engine produced between 1983 and 1989.
@@ -7635,6 +7679,10 @@ Designed to meet early European emissions standards, it balances sporty characte
           description: `Official technical database for Alfa Romeo 199 A8.000 (1967–1972): verified specifications, compatible models, common failure points. Sourced from Alfa Romeo historical archives, ASI documentation, and recognized engineering standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1967–1972)",
           intro: [
             `The Alfa Romeo 199 A8.000 is a 1,962 cc, inline-four, naturally aspirated petrol engine produced between 1967 and 1972.
@@ -8213,6 +8261,10 @@ Developed before formal emissions regulations, it prioritizes mechanical perform
           description: `Official technical database for Alfa Romeo 199 B1.000 (2010–2015): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2010–2015)",
           intro: [
             `The Alfa Romeo 199 B1.000 is a 1,750 cc, inline-four petrol engine produced between 2010 and 2015.
@@ -8812,6 +8864,10 @@ Designed to meet Euro 5 emissions standards, it balances everyday drivability wi
           description: `Official technical database for Alfa Romeo 199 B4.000 (1985-1992): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1987-1992)",
           intro: [
             `The Alfa Romeo 199 B4.000 is a 1,796 cc, inline-four petrol engine produced between 1987 and 1992.
@@ -9399,6 +9455,10 @@ Designed to meet early European emissions standards, it balances sporty characte
           description: `Official technical database for Alfa Romeo 199 B6.000 (1967–1972): verified specifications, compatible models, common failure points. Sourced from Alfa Romeo historical archives, ASI documentation, and recognized engineering standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1967–1972)",
           intro: [
             `The Alfa Romeo 199 B6.000 is a 1,570 cc, inline-four, naturally aspirated petrol engine produced between 1967 and 1972.
@@ -9970,6 +10030,10 @@ Developed before formal emissions regulations, it prioritizes mechanical perform
           description: `Complete database & guide to Alfa Romeo 199 B8.000: specs, compatible models, common problems.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1982–1986)",
           intro: [
             `The Alfa Romeo 199 B8.000 is a 1,962 cc, inline-four petrol engine produced between 1982 and 1986. It features a twin-cam (DOHC), 8-valve configuration with mechanical fuel injection (Bosch K-Jetronic), delivering 112 kW (152 PS) at 6,200 rpm. This high-revving architecture enables strong top-end power for spirited driving and balanced chassis dynamics.`,
@@ -10551,6 +10615,10 @@ Developed before formal emissions regulations, it prioritizes mechanical perform
           description: `Official technical database for Alfa Romeo 312 A2.000 (1987-1992): verified specifications, compatible models, known reliability concerns. Sourced from Alfa Romeo TIS, ETK, and EU regulatory documents.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1987–1992)",
           intro: [
             `The Alfa Romeo 312 A2.000 is a 1,995 cc, inline-four, naturally aspirated petrol engine produced between 1987 and 1992.
@@ -11127,6 +11195,10 @@ Designed to meet Euro 1 emissions standards, it balances spirited performance wi
           description: `Official technical database for Alfa Romeo A1.000 (2016–present): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–present)",
           intro: [
             `The Alfa Romeo A1.000 is a 999 cc, inline-three turbocharged petrol engine introduced in 2016 as part of the Fiat Global Small Engine (GSE) family. It features direct and port fuel injection (TwinAir technology), a single-scroll turbocharger, and dual overhead camshafts. In its standard tune, it produces 85 kW (115 PS) with peak torque of 190 Nm, delivering responsive urban performance and improved thermal efficiency.`,
@@ -11704,6 +11776,10 @@ Designed to meet Euro 1 emissions standards, it balances spirited performance wi
           description: `Official technical database for Alfa Romeo 350 A1.000 (1985–1993): verified specs, compatible models, common failure. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1985–1993)",
           intro: [
             `The Alfa Romeo 350 A1.000 is a 3,498 cc, 60° V6 petrol engine produced between 1985 and 1993.
@@ -12279,6 +12355,10 @@ Designed to meet early European emissions standards, it balances driver engageme
           description: `Official technical database for Alfa Romeo 463 35 975 Diesel (2010-2015): verified specifications, compatible models, common failures. Sourced from Alfa Romeo TIS, ETK, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2010–2015)",
           intro: [
             `The Alfa Romeo 463 35 975 is a 1,956 cc, inline-four turbo-diesel engine produced between 2010 and 2015. It features common rail direct injection, a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 103 kW (140 PS) and 320 Nm of torque. This engine was engineered for responsive mid-range performance and efficient highway cruising.`,
@@ -12848,6 +12928,10 @@ Designed to meet early European emissions standards, it balances driver engageme
           description: `Official technical database for Alfa Romeo 552 66 388 Diesel (2006–2010): verified specifications, compatible models, common failures. Data sourced from Alfa Romeo TIS, ETK, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2006–2010)",
           intro: [
             `The Alfa Romeo 552 66 388 is a 1,910 cc, inline-four turbo-diesel engine produced between 2006 and 2010.
@@ -13435,6 +13519,10 @@ Designed to meet Euro 4 emissions standards, it balances sporty driving dynamics
           description: `Official technical database for Iveco 552 68 532 Diesel (2013–2018): verified specifications, compatible models, common failures. Sourced from Iveco TIS, ETP, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2013–2018)",
           intro: [
             `The Iveco 552 68 532 is a 3,496 cc, inline-four turbo-diesel engine produced between 2013 and 2018. It features high-pressure common-rail injection (up to 1,800 bar), a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 107 kW (146 PS) and 350 Nm of torque. This engine was engineered for light commercial vehicle applications requiring strong low-end pull and fuel-efficient operation.`,
@@ -14596,6 +14684,10 @@ Designed to meet Euro 4 emissions standards, it balances sporty driving dynamics
           description: `Official technical database for Iveco 552 71 040 Diesel (2015–2020): verified specifications, compatible models, common failures. Sourced from Iveco TIS, ETP, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2015–2020)",
           intro: [
             `The Iveco 552 71 040 is a 3,496 cc, inline-four turbo-diesel engine produced between 2015 and 2020. It features high-pressure common-rail injection (up to 1,800 bar), a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 121 kW (165 PS) and 400 Nm of torque. This engine was engineered for light commercial vehicle applications requiring strong low-end pull and improved fuel efficiency over its predecessor.`,
@@ -15166,6 +15258,10 @@ Designed to meet Euro 4 emissions standards, it balances sporty driving dynamics
           description: `Official technical database for Iveco 552 71 838 Diesel (2016–2021): verified specifications, compatible models, common failures. Sourced from Iveco TIS, ETP, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2021)",
           intro: [
             `The Iveco 552 71 838 is a 3,496 cc, inline-four turbo-diesel engine produced between 2016 and 2021. It features high-pressure common-rail injection (up to 1,800 bar), a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 130 kW (177 PS) and 430 Nm of torque. This engine was engineered for light commercial vehicle applications requiring strong low-end pull and improved fuel efficiency over its predecessor.`,
@@ -15736,6 +15832,10 @@ Designed to meet Euro 4 emissions standards, it balances sporty driving dynamics
           description: `Official technical database for Alfa Romeo 552 73 835 – Diesel (2010-2016): verified specs, compatible models, common failures. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2010–2016)",
           intro: [
             `The Alfa Romeo 552 73 835 – Diesel is a 1,598 cc, inline-four turbo-diesel engine produced between 2010 and 2016.
@@ -16333,6 +16433,10 @@ Designed to meet Euro 5 standards, it balances sporty character with everyday ec
           description: `Official technical database for Iveco 552 75 156 Diesel (2018–2023): verified specifications, compatible models, common failures. Sourced from Iveco TIS, ETP, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Iveco 552 75 156 is a 3,496 cc, inline-four turbo-diesel engine produced between 2018 and 2023. It features high-pressure common-rail injection (up to 1,800 bar), a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 146 kW (199 PS) and 450 Nm of torque. This engine was engineered for light commercial vehicle applications requiring strong low-end pull and improved responsiveness over earlier variants.`,
@@ -16903,6 +17007,10 @@ Designed to meet Euro 5 standards, it balances sporty character with everyday ec
           description: `Official technical database for Iveco 552 80 444 Diesel (2020–2025): verified specifications, compatible models, common failures. Sourced from Iveco TIS, ETP, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Iveco 552 80 444 is a 3,496 cc, inline-four turbo-diesel engine produced between 2020 and 2025. It features high-pressure common-rail injection (up to 1,800 bar), a variable geometry turbocharger (VGT), and dual overhead camshafts (DOHC), delivering 162 kW (220 PS) and 500 Nm of torque. This engine was engineered for light commercial vehicle applications requiring maximum low-end pull and improved responsiveness over earlier variants.`,
@@ -17472,6 +17580,10 @@ Designed to meet Euro 5 standards, it balances sporty character with everyday ec
           description: `Official technical database for Alfa Romeo 552 83 099 – Diesel (2016–2020): verified specs, compatible models, common failures. Sources from Alfa Romeo TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2020)",
           intro: [
             `The Alfa Romeo 552 83 099 – Diesel is a 1,956 cc, inline-four turbo-diesel engine produced between 2016 and 2020.
@@ -18059,10 +18171,10 @@ Designed to meet Euro 6c standards, it integrates emissions control within the e
     },
   },
   "land-rover": {
-    heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
-    },
+    // heroImage: {
+    //   src: "/bmw-sample-engine.jpg",
+    //   alt: "BMW N47D20A Engine",
+    // },
     researchResources: {
       serviceManual: "https://www.bmw-tech.org/goto/manuals/n47",
       serviceBulletin: "https://www.bmw-tech.org/tsb",
@@ -18074,6 +18186,10 @@ Designed to meet Euro 6c standards, it integrates emissions control within the e
           description: `Official technical database for Land Rover 10 H – Petrol (1948-1951): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1948-1951)",
           intro: [
             `The Land Rover 10 H – Petrol is a 1,997 cc, inline-four, naturally aspirated engine produced between 1948 and 1951.
@@ -18615,6 +18731,10 @@ Built before emissions regulations, it prioritizes durability and ease of repair
           description: `Official technical database for Land Rover 10 J – Diesel (1980-1983): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1980-1983)",
           intro: [
             `The Land Rover 10 J – Diesel is a 2,286 cc, inline-four, naturally aspirated diesel engine produced between 1980 and 1983.
@@ -19182,6 +19302,10 @@ Designed for pre-regulatory emissions operation, it prioritises durability and e
           description: `Official technical database for Land Rover 11 D – Diesel (1951-1956): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1951–1956)",
           intro: [
             `The Land Rover 11 D – Diesel is a 1,997 cc, inline-four, naturally aspirated diesel engine produced between 1951 and 1956.
@@ -19725,6 +19849,10 @@ Built before emissions regulations, it prioritizes durability and ease of repair
           description: `Official technical database for Land Rover 11 L – Petrol (1983-1988): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1983-1988)",
           intro: [
             `The Land Rover 11 L – Petrol is a 3,528 cc, inline-four, overhead valve (OHV) petrol engine produced between 1983 and 1988.
@@ -20293,6 +20421,10 @@ Designed to meet early European emissions requirements, it balances simplicity w
           description: `Official technical database for Land Rover 11 H – Petrol (1951-1955): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1951–1955)",
           intro: [
             `The Land Rover 11 H – Petrol is a 2,050 cc, inline-four, naturally aspirated engine produced between 1951 and 1955.
@@ -20835,6 +20967,10 @@ Built before emissions regulations, it prioritizes durability and ease of repair
           description: `Official technical database for Land Rover 12 L – Petrol (1988-1994): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1988-1994)",
           intro: [
             `The Land Rover 12 L – Petrol is a 3,528 cc, inline-four, overhead valve (OHV) petrol engine produced between 1988 and 1994.
@@ -21402,6 +21538,10 @@ Designed to meet early European emissions requirements, it balances simplicity w
           description: `Official technical database for Land Rover 13 L – Petrol (1955-1958): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1955–1958)",
           intro: [
             `The Land Rover 13 L – Petrol is a 2,286 cc, inline-four, naturally aspirated engine produced between 1955 and 1958.
@@ -21944,6 +22084,10 @@ Built before emissions regulations, it prioritizes durability and ease of repair
           description: `Official technical database for Land Rover 15 P – Petrol (1994-2004): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1994-2004)",
           intro: [
             `The Land Rover 15 P – Petrol is a 4,047 cc, V8, overhead valve (OHV) petrol engine produced between 1994 and 2004.
@@ -22509,6 +22653,10 @@ Designed to meet early European emissions requirements, it balances traditional 
           description: `Official technical database for Land Rover 16 L – Petrol (1958-1961): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1958–1961)",
           intro: [
             `The Land Rover 16 L – Petrol is a 2,286 cc, inline-four, naturally aspirated engine produced between 1958 and 1961.
@@ -23050,6 +23198,10 @@ Built before emissions regulations, it prioritizes durability and ease of repair
           description: `Official technical database for Land Rover 17 L – Petrol (2020–2025): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 17 L – Petrol is a 4,395 cc, V8 naturally aspirated engine produced between 2020 and 2025.
@@ -23633,6 +23785,10 @@ Designed to meet Euro 6d emissions standards, it balances high-performance outpu
           description: `Official technical database for Land Rover K4F (2001-2006): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2001-2006)",
           intro: [
             `The Land Rover K4F is a 1,796 cc, inline-four petrol engine produced between 2001 and 2006.
@@ -24223,6 +24379,10 @@ Designed to meet Euro 3 emissions standards, it balances drivability with regula
           description: `Technical database for Land Rover 19 L – Petrol engine (1958–1971): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1958–1971)",
           intro: [
             `The Land Rover 19 L – Petrol is a 1,904 cc, inline-four, naturally aspirated petrol engine produced between 1958 and 1971. It replaced the earlier 1.6 L engine and featured a cast-iron block, overhead valve (OHV) configuration, and carburetted fuel delivery. With an output of 60 bhp (45 kW) at 3,800 rpm and 104 lb·ft (141 Nm) of torque, it provided dependable low-speed torque for off-road use and agricultural applications.`,
@@ -24770,6 +24930,10 @@ Designed to meet Euro 3 emissions standards, it balances drivability with regula
           description: `Official technical database for Land Rover 20H Petrol (2011-2016): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2011–2016)",
           intro: [
             `The Land Rover 20H Petrol is a 1,999 cc, inline-four gasoline engine produced between 2011 and 2016.
@@ -25355,6 +25519,10 @@ Designed to meet Euro 5 and later Euro 6 emissions standards, it balances urban 
           description: `Official technical database for Land Rover 20 T2N (2018-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Land Rover 20 T2N is a 1,999 cc, inline-four turbocharged petrol engine produced between 2018 and 2023.
@@ -25945,6 +26113,10 @@ Designed to meet Euro 6d-Final emissions standards, it balances urban drivabilit
           description: `Official technical database for Land Rover 204D3 (2015-2020): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2015–2020)",
           intro: [
             `The Land Rover 204D3 is a 1,999 cc, inline-four turbo-diesel engine produced between 2015 and 2020.
@@ -26527,6 +26699,10 @@ and refined on-road performance. Designed to meet Euro 6 standards, it balances 
           description: `Official technical database for Land Rover 204DTA (2016-2020): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2020)",
           intro: [
             `The Land Rover 204DTA is a 1,999 cc, inline-four turbo-diesel engine produced between 2016 and 2020.
@@ -27108,6 +27284,10 @@ Designed to meet Euro 6 emissions standards, it integrates SCR-AdBlue technology
           description: `Technical database for Land Rover 204DTD – Diesel engine (1980–1983): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1980–1983)",
           intro: [
             `The Land Rover 204DTD – Diesel is a 2,048 cc, inline-four, naturally aspirated diesel engine produced between 1980 and 1983. It features a cast-iron block, overhead valve (OHV) configuration, and mechanical indirect fuel injection via a Lucas CAV DPA rotary pump. With an output of 62 bhp (46 kW) at 3,800 rpm and 105 lb·ft (142 Nm) of torque, it was engineered for low-speed utility use in agricultural and off-road applications.`,
@@ -27640,6 +27820,10 @@ Designed to meet Euro 6 emissions standards, it integrates SCR-AdBlue technology
           description: `Official technical database for Land Rover 204PT Petrol (2016–2020): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2020)",
           intro: [
             `The Land Rover 204PT Petrol is a 1,999 cc, inline-four gasoline engine produced between 2016 and 2020.
@@ -28222,6 +28406,10 @@ Engineered to meet Euro 6b standards, it balances on-road refinement with light 
           description: `Official technical database for Land Rover 21 L (2019-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2019–2023)",
           intro: [
             `The Land Rover 21 L is a 1,999 cc, inline-four turbocharged petrol engine produced between 2019 and 2023.
@@ -28823,6 +29011,10 @@ Designed to meet Euro 6d-Final regulations, it balances performance with emissio
           description: `Official technical database for Land Rover 22 D (2020-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 22 D is a 1,999 cc, inline-four turbo-diesel engine introduced in 2020 as part of JLR's updated Ingenium engine family.
@@ -29404,6 +29596,10 @@ Engineered to meet Euro 6d standards, it balances real-world drivability with st
           description: `Technical database for Land Rover 22 L – Petrol engine (1961–1971): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1961–1971)",
           intro: [
             `The Land Rover 22 L – Petrol is a 2,286 cc, inline-four, naturally aspirated petrol engine produced between 1961 and 1971. It features a cast-iron block, overhead valve (OHV) configuration, and carburetted fuel delivery via a single SU carburettor. With an output of 72 bhp (54 kW) at 4,000 rpm and 125 lb·ft (170 Nm) of torque, it provided increased low-end power over the earlier 19 L unit for improved off-road performance.`,
@@ -29951,6 +30147,10 @@ Engineered to meet Euro 6d standards, it balances real-world drivability with st
           description: `Official technical database for Land Rover 224DT Diesel (2016–2020): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2020)",
           intro: [
             `The Land Rover 224DT Diesel is a 1,999 cc, inline-four turbo-diesel engine produced between 2016 and 2020.
@@ -30533,6 +30733,10 @@ Engineered to meet Euro 6c standards, it balances on-road efficiency with off-ro
           description: `Official technical database for Land Rover 23 J (2020-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2023)",
           intro: [
             `The Land Rover 23 J is a 1,999 cc, inline-four turbo-diesel engine produced between 2020 and 2023.
@@ -31127,6 +31331,10 @@ Designed to meet Euro 6d-Final regulations, it balances real-world drivability w
           description: `Official technical database for Land Rover 23 L (2021-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2021–2025)",
           intro: [
             `The Land Rover 23 L is a 1,998 cc, inline-four turbocharged petrol engine introduced in 2021 as part of JLR's updated Ingenium engine family.
@@ -31723,6 +31931,10 @@ Engineered to meet Euro 6d standards, it balances real-world drivability with mo
           description: `Official technical database for Land Rover 24 D (2020-2025): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 24 D is a 1,999 cc, inline-four turbo-diesel engine produced between 2020 and 2025.
@@ -32321,6 +32533,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Technical database for Land Rover 25 D – Diesel engine (1983–1988): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1983–1988)",
           intro: [
             `The Land Rover 25 D – Diesel is a 2,495 cc, inline-four, naturally aspirated diesel engine produced between 1983 and 1988. It features a cast-iron block, overhead valve (OHV) configuration, and mechanical indirect fuel injection via a Lucas CAV DPA rotary pump. With an output of 68 bhp (51 kW) at 3,800 rpm and 118 lb·ft (160 Nm) of torque, it was engineered for utility and off-road durability.`,
@@ -32868,6 +33084,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Official technical database for Land Rover 256T Petrol (2018–2023): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Land Rover 256T Petrol is a 2,996 cc, inline-six gasoline engine produced between 2018 and 2023.
@@ -33451,6 +33671,10 @@ Engineered to meet Euro 6d standards, it balances on-road refinement with dynami
           description: `Official technical database for Land Rover 25 K4F (2020-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2023)",
           intro: [
             `The Land Rover 25 K4F is a 1,999 cc, inline-four turbocharged petrol engine produced between 2020 and 2023.
@@ -34052,6 +34276,10 @@ Designed to meet Euro 6d-Final regulations, it balances performance with emissio
           description: `Official technical database for Land Rover 276DT (2018-2023): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Land Rover 276DT is a 2,993 cc, inline-six turbo-diesel engine produced between 2018 and 2023 as part of JLR's Ingenium engine family.
@@ -34633,6 +34861,10 @@ Designed to meet Euro 6d standards, it balances refinement, towing capability, a
           description: `Official technical database for Land Rover 306D1 (2004-2016): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2004–2016)",
           intro: [
             `The Land Rover 306D1 is a 2,993 cc, inline-six turbo-diesel engine produced between 2004 and 2016.
@@ -35231,6 +35463,10 @@ Designed to meet Euro 4 and Euro 5 emissions standards, it integrates EGR and DP
           description: `Official technical database for Land Rover 306DT-Diesel (2004-2011): verified specs, compatible models, common failure. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2004-2011)",
           intro: [
             `The Land Rover 306DT-Diesel is a 2,993 cc, inline-six turbo-diesel engine produced between 2004 and 2011.
@@ -35816,6 +36052,10 @@ and dependable off-road performance. Designed to meet Euro 3 (early) and Euro 4 
           description: `Official technical database for Land Rover 306PS Petrol (2020–2025): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 306PS Petrol is a 2,996 cc, inline-six gasoline engine produced between 2020 and 2025.
@@ -36413,6 +36653,10 @@ Engineered to meet Euro 6d standards, it balances on-road refinement with dynami
           description: `Official technical database for Land Rover 30DDTX (2020-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2023)",
           intro: [
             `The Land Rover 30DDTX is a 2,993 cc, inline-six turbocharged diesel engine produced between 2020 and 2023.
@@ -36992,6 +37236,10 @@ Designed to meet Euro 6d-Final regulations, it balances refinement with emission
           description: `Official technical database for Land Rover 31 D (2022-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2022–2025)",
           intro: [
             `The Land Rover 31 D is a 2,993 cc, inline-six turbo-diesel engine produced between 2022 and 2025 as part of JLR's Ingenium engine family.
@@ -37558,6 +37806,10 @@ Designed to meet Euro 6d standards, it balances refinement, towing capability, a
           description: `Official technical database for Land Rover 35 D (2021-2025): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2021–2025)",
           intro: [
             `The Land Rover 35 D is a 2,993 cc, inline-six turbo-diesel engine produced between 2021 and 2025.
@@ -38141,6 +38393,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Technical database for Land Rover 36 D – Diesel engine (1988–1995): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1988–1995)",
           intro: [
             `The Land Rover 36 D – Diesel is a 3,599 cc, inline-six, naturally aspirated diesel engine produced between 1988 and 1995. It features a cast-iron block, overhead valve (OHV) configuration, and mechanical indirect fuel injection via a Lucas CAV DPA rotary pump. With an output of 122 bhp (91 kW) at 3,800 rpm and 235 lb·ft (319 Nm) of torque, it was engineered for heavy-duty utility and off-road applications.`,
@@ -38703,6 +38959,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Official technical database for Land Rover 368DT Diesel (2020–2025): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 368DT Diesel is a 2,993 cc, inline-six turbo-diesel engine produced between 2020 and 2025.
@@ -39285,6 +39545,10 @@ Engineered to meet Euro 6d standards, it balances on-road refinement with off-ro
           description: `Official technical database for Land Rover 37 D (2021-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2021–2023)",
           intro: [
             `The Land Rover 37 D is a 2,993 cc, inline-six turbocharged diesel engine produced between 2021 and 2023.
@@ -39849,6 +40113,10 @@ Designed to meet Euro 6d-Final regulations, it balances performance with emissio
           description: `Official technical database for Land Rover 37 L (2023-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2023–2025)",
           intro: [
             `The Land Rover 37 L is a 2,996 cc, inline-six turbocharged petrol engine produced between 2023 and 2025 as part of JLR's Ingenium engine family.
@@ -40415,6 +40683,10 @@ Engineered to meet Euro 6d standards, it balances refinement, performance, and r
           description: `Official technical database for Land Rover 38 D (2022-2025): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2022–2025)",
           intro: [
             `The Land Rover 38 D is a 2,993 cc, inline-six turbo-diesel engine produced between 2022 and 2025.
@@ -40998,6 +41270,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Technical database for Land Rover 40 D – Diesel engine (1990–1995): verified specifications, compatible models, known issues. Sourced from Land Rover TIS, UK VCA, and SAE standards.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1990–1995)",
           intro: [
             `The Land Rover 40 D – Diesel is a 3,947 cc, inline-six, naturally aspirated diesel engine produced between 1990 and 1995. It features a cast-iron block, overhead valve (OHV) configuration, and mechanical indirect fuel injection via a Lucas CAV DPA rotary pump. With an output of 136 bhp (101 kW) at 3,800 rpm and 258 lb·ft (350 Nm) of torque, it was engineered for heavy-duty utility and off-road applications.`,
@@ -41560,6 +41836,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Official technical database for Land Rover 406PN Petrol (2021–2025): verified specifications, compatible models, common failures. Sourced from Land Rover Technical Information System (TIS), VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2021–2025)",
           intro: [
             `The Land Rover 406PN Petrol is a 3,993 cc, V8 gasoline engine produced between 2021 and 2025.
@@ -42127,6 +42407,10 @@ Engineered to meet Euro 6d standards, it balances track-capable power with on-ro
           description: `Official technical database for Land Rover 42 D (2022-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2022–2023)",
           intro: [
             `The Land Rover 42 D is a 2,993 cc, inline-six turbocharged diesel engine produced between 2022 and 2023.
@@ -42691,6 +42975,10 @@ Designed to meet Euro 6d-Final regulations, it balances extreme performance with
           description: `Official technical database for Land Rover 428PS (2022-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2022–2025)",
           intro: [
             `The Land Rover 428PS is a 2,996 cc, inline-six turbocharged petrol engine produced between 2022 and 2025 as part of JLR's Ingenium engine family.
@@ -43257,6 +43545,10 @@ Engineered to meet Euro 6d standards, it balances refinement, performance, and r
           description: `Official technical database for Land Rover 448DT (2018-2023): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Land Rover 448DT is a 2,993 cc, inline-six turbo-diesel engine produced between 2018 and 2023.
@@ -43856,6 +44148,10 @@ Designed to meet Euro 6d and US Tier 3 standards, it features dual-loop EGR, SCR
           description: `Official technical database for Land Rover 448PN (2011-2018): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2011–2018)",
           intro: [
             `The Land Rover 448PN is a 2,995 cc, V6 petrol engine produced between 2011 and 2018.
@@ -44434,6 +44730,10 @@ Designed to meet Euro 5 emissions standards, it balances performance with drivab
           description: `Official technical database for Land Rover 46 D (2018-2023): verified specs, compatible models, common failures. Sources from Land Rover Technical Information System (TIS), VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018–2023)",
           intro: [
             `The Land Rover 46 D is a 2,993 cc, inline-six turbo-diesel engine produced between 2018 and 2023.
@@ -45018,6 +45318,10 @@ to deliver high torque and responsive drivability. Designed to meet Euro 6d stan
           description: `Official technical database for Land Rover 508PN (2011-2016): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2011-2016)",
           intro: [
             `The Land Rover 508PN is a 4,999 cc, V8 naturally aspirated petrol engine produced between 2011 and 2016.
@@ -45586,6 +45890,10 @@ Designed to meet Euro 5 standards, it balances performance with drivability in d
           description: `Official technical database for Land Rover 508PS Petrol (2020–2025): verified specifications, compatible models, known reliability concerns. Sourced from Land Rover TDS, EPC, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover 508PS Petrol is a 5.0 L, V8 supercharged gasoline engine produced between 2020 and 2025.
@@ -46141,6 +46449,10 @@ Designed to meet Euro 6d standards, it balances high-performance character with 
           description: `Official technical database for Land Rover B 6324 S (1995-2000): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1995–2000)",
           intro: [
             `The Land Rover B 6324 S is a 2,435 cc, inline-four petrol engine produced between 1995 and 2000.
@@ -46704,6 +47016,10 @@ Designed to meet Euro 2 emissions standards, it prioritizes mechanical reliabili
           description: `Official technical database for Land Rover B6323T (2011-2016): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2011–2016)",
           intro: [
             `The Land Rover B6323T is a 3,222 cc, inline-six petrol engine produced between 2011 and 2016.
@@ -47286,6 +47602,10 @@ Designed to meet Euro 5 standards, it balances refinement with regulatory compli
           description: `Official technical database for Land Rover DW12BTED4 (2001-2006): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2001-2006)",
           intro: [
             `The Land Rover DW12BTED4 is a 2,179 cc, inline-four turbo-diesel engine produced between 2001 and 2006.
@@ -47848,6 +48168,10 @@ Designed to meet Euro 3 standards, it balances urban drivability with light-duty
           description: `Official technical database for Land Rover M47 Petrol (1997-2004): verified specifications, compatible models, known reliability concerns. Sourced from Land Rover TDS, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1997–2004)",
           intro: [
             `The Land Rover M47 is a 2,495 cc, inline-four petrol engine produced between 1997 and 2004.
@@ -48412,6 +48736,10 @@ Designed to meet Euro 2 and Euro 3 emissions standards, it prioritises durabilit
           description: `Official technical database for Land Rover M62 B44 (1997-2002): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(1997–2002)",
           intro: [
             `The Land Rover M62 B44 is a 4,398 cc, V8 petrol engine produced between 1997 and 2002.
@@ -48960,6 +49288,10 @@ Designed to meet Euro 3 emissions standards, it balances refinement with off-roa
           description: `Official technical database for Land Rover PT204 (2020-2025): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–2025)",
           intro: [
             `The Land Rover PT204 is a 1,998 cc, inline-four turbocharged petrol engine produced between 2020 and 2025.
@@ -49541,6 +49873,10 @@ Designed to meet Euro 6d standards, it balances performance with regulatory comp
           description: `Official technical database for Land Rover P300 (2018-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2018-2023)",
           intro: [
             `The Land Rover P300 is a 1,997 cc, inline-four turbocharged petrol engine produced between 2018 and 2023.
@@ -50124,6 +50460,10 @@ Designed to meet Euro 6d-TEMP standards, it balances performance with real-world
           description: `Official technical database for Land Rover P400 Petrol (2017-2023): verified specifications, compatible models, known reliability concerns. Sourced from Land Rover TDS, VCA, and EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2017–2023)",
           intro: [
             `The Land Rover P400 is a 2,995 cc, inline-six turbocharged petrol engine produced between 2017 and 2023.
@@ -50687,6 +51027,10 @@ Designed to meet Euro 6d-Temp standards, it balances performance with emissions 
           description: `Official technical database for Land Rover P510 (2020–present): verified specs, compatible models, common failures. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020–present)",
           intro: [
             `The Land Rover P510 is a 2,996 cc, inline-six petrol engine produced from 2020 onward as part of the Ingenium engine family.
@@ -51250,6 +51594,10 @@ Designed to meet Euro 6d emissions standards, it balances performance with moder
           description: `Official technical database for Land Rover L34 (2016-2020): verified specs, compatible models, common failures. Sources from Land Rover TIS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2016–2020)",
           intro: [
             `The Land Rover L34 is a 3,498 cc, V6 naturally aspirated petrol engine produced between 2016 and 2020.
@@ -51817,6 +52165,10 @@ Designed to meet Euro 6 standards, it balances refinement with regulatory compli
           description: `Official technical database for Land Rover L414 (2020-2023): verified specs, compatible models, common failure. Sources from Land Rover TDS, VCA, EU regulations.`,
         },
         hero: {
+          image: {
+            src: "/bmw-sample-engine.jpg",
+            alt: "BMW N47D20A Engine",
+          },
           years: "(2020-2023)",
           intro: [
             `The Land Rover L414 is a 1,997 cc, inline-four turbocharged petrol engine produced between 2020 and 2023.
