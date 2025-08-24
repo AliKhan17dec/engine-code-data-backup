@@ -35,3 +35,21 @@ export const getAllEngineSlugs = async (): Promise<
 
   return slugs;
 };
+
+export const getAllBrands = async () => {
+  return Object.keys(pageData).map((brand) => ({
+    id: brand,
+    name: brand.charAt(0).toUpperCase() + brand.slice(1),
+    engineCount: Object.keys(pageData[brand].engines).length,
+  }));
+};
+
+export const getEnginesForBrand = async (brand: string) => {
+  const brandData = pageData[brand];
+  if (!brandData) return [];
+
+  return Object.keys(brandData.engines).map((engine) => ({
+    id: engine,
+    name: engine.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+  }));
+};
