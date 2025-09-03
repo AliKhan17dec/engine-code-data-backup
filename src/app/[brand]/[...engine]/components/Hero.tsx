@@ -28,8 +28,8 @@ const Hero = ({
           ))}
           <div className="w-full h-56 md:h-96 relative drop-shadow-xl">
             <Image
-              src={image.src}
-              alt={image.alt}
+              src={image?.src as string}
+              alt={image?.alt as string}
               fill
               className="object-cover rounded-lg shadow-md"
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 70vw, 900px"

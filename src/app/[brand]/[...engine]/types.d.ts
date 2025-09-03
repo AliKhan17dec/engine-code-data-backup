@@ -26,8 +26,8 @@ interface InfoBlock {
 interface TechnicalSpecsData {
   description: string;
   engineSpecs:
-    | TableData
-    | { parameter: string; value: string; source: string }[];
+  | TableData
+  | { parameter: string; value: string; source: string }[];
   practicalImplications: {
     heading: string;
     content: string;
@@ -110,7 +110,7 @@ interface HeroData {
 }
 
 interface HeroDataProps extends HeroData {
-  image: {
+  image?: {
     src: string;
     alt: string;
   };
