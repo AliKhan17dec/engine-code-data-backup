@@ -26,8 +26,8 @@ interface InfoBlock {
 interface TechnicalSpecsData {
   description: string;
   engineSpecs:
-  | TableData
-  | { parameter: string; value: string; source: string }[];
+    | TableData
+    | { parameter: string; value: string; source: string }[];
   practicalImplications: {
     heading: string;
     content: string;
@@ -103,7 +103,7 @@ interface HeroData {
     title: string;
     text: string;
   };
-  image: {
+  image?: {
     src: string;
     alt: string;
   };
@@ -323,6 +323,10 @@ interface ResearchResourcesShort {
   serviceBulletin: string;
 }
 interface BrandData {
+  heroImage?: {
+    src: string;
+    alt: string;
+  };
   researchResources: ResearchResourcesShort;
   engines: Record<string, EnginePageData>;
 }
