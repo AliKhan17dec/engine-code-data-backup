@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const { pageData } = require("./src/app/data/AllBrandsData/mazda.ts");
+const { pageData } = require("./src/app/data/AllBrandsData/porsche.ts");
 
 function sanitizeForJSON(obj) {
   if (obj === null || obj === undefined) return null;
