@@ -496,6 +496,10 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowRight, Zap, Settings, Gauge } from "lucide-react";
 
+const formatEngineCode = (code: string) =>
+  code.replace(/\s+/g, "-").toUpperCase();
+
+
 type BrandPageProps = {
   params: Promise<{
     brand: string;
@@ -561,8 +565,9 @@ export default async function BrandPage({ params }: BrandPageProps) {
             >
               <div className="flex justify-between items-start">
                 <h2 className="text-xl font-semibold text-foreground group-hover:text-primary transition-all duration-300">
-                  {engine.name}
-                </h2>
+  {formatEngineCode(engine.name)}
+</h2>
+
                 <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
               </div>
 
@@ -570,7 +575,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
                 Detailed specifications and performance data
               </p>
 
-              <div className="flex items-center gap-4 text-xs text-muted-foreground">
+              {/* <div className="flex items-center gap-4 text-xs text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Settings className="w-3 h-3" />
                   <span>Specs</span>
@@ -579,7 +584,7 @@ export default async function BrandPage({ params }: BrandPageProps) {
                   <Gauge className="w-3 h-3" />
                   <span>Performance</span>
                 </div>
-              </div>
+              </div> */}
             </Link>
           ))}
         </div>

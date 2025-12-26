@@ -292,8 +292,8 @@ export const pageData: Record<string, BrandData> = {
         },
         hero: {
           image: {
-            src: "/bmw-sample-engine.jpg",
-            alt: "BMW N47D20A Engine",
+            src: "/engine-main-image/jaguar-engine.webp",
+            alt: "Jaguar Engine",
           },
           years: "(2010–2015)",
           intro: [

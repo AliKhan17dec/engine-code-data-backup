@@ -38,7 +38,7 @@ const Hero = ({
         </div>
         <div className="lg:w-3/10 w-full">
           <div className="lg:sticky top-20 h-fit">
-            <RelatedEngines />
+            <RelatedEngines brand={brand} engine={engine} />
           </div>
         </div>
       </div>

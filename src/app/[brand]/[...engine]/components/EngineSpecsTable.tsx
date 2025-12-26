@@ -25,7 +25,21 @@ export interface EngineSpecsTableProps {
 }
 
 export function EngineSpecsTable({ data, tableType }: EngineSpecsTableProps) {
-  const columns = Object.keys(data[0]);
+  // Define the desired column order
+const desiredOrder = ["parameter", "value", "source"];
+
+// Get columns and sort them according to desired order
+const rawColumns = Object.keys(data[0]);
+const columns = rawColumns.sort((a, b) => {
+  const aIndex = desiredOrder.indexOf(a.toLowerCase());
+  const bIndex = desiredOrder.indexOf(b.toLowerCase());
+
+  if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+  if (aIndex !== -1) return -1;
+  if (bIndex !== -1) return 1;
+  return 0;
+});
+
   const [showSourcePopup, setShowSourcePopup] = useState(false);
   const [currentSource, setCurrentSource] = useState("");
 
