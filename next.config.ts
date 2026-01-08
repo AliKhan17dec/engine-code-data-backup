@@ -8,7 +8,10 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ["cmsenginesmarket.enginefinders.co.uk"],
+    domains: [
+      "cmsenginesmarket.enginefinders.co.uk",
+      "cmsenginecode.enginefinders.co.uk",
+    ],
   },
 };
 
