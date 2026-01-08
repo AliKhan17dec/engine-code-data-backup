@@ -281,8 +281,8 @@ iveco: {
       serviceBulletin: "https://www.bmw-tech.org/tsb",
     },
     heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
+      src: "/engine-main-image/iveco-engine.webp",
+      alt: "Iveco Engine",
     },
     engines: {
         "cursor-8": {

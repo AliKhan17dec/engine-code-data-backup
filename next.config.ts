@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    domains: [
+      "cmsenginesmarket.enginefinders.co.uk",
+      "cmsenginecode.enginefinders.co.uk",
+    ],
+  },
 };
 
 export default nextConfig;

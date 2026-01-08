@@ -281,8 +281,8 @@ chevrolet: {
         serviceBulletin: "https://www.bmw-tech.org/tsb",
       },
       heroImage: {
-        src: "/bmw-sample-engine.jpg",
-        alt: "BMW N47D20A Engine",
+        src: "/engine-main-image/chevrolet-engine.webp",
+        alt: "Chevrolet Engine",
       },
       engines: {
         "2h0": {

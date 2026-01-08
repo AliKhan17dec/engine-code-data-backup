@@ -281,7 +281,7 @@ mg: {
       serviceBulletin: "https://www.bmw-tech.org/tsb",
     },
     heroImage: {
-      src: "/bmw-sample-engine.jpg",
+      src: "/engine-main-image/mg-engine.webp",
       alt: "BMW N47D20A Engine",
     },
     engines: {

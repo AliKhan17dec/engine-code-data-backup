@@ -277,8 +277,8 @@ export const pageData: Record<string, BrandData> = {
 
     "range-rover": {
         heroImage: {
-            src: "/bmw-sample-engine.jpg",
-            alt: "BMW N47D20A Engine",
+            src: "/engine-main-image/rangerover-engine.webp",
+            alt: "RangeRover Engine",
         },
         researchResources: {
             serviceManual: "https://www.bmw-tech.org/goto/manuals/n47",

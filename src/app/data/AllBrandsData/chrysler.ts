@@ -282,8 +282,8 @@ chrysler: {
 
     },
     heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
+      src: "/engine-main-image/chrysler-engine.webp",
+      alt: "Chrysler Engine",
     },
     engines: {
       ebd: {

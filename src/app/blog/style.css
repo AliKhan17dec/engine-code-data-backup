@@ -1,0 +1,9 @@
+.prose img {
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.prose a {
+  text-decoration: underline;
+  font-weight: 500;
+}

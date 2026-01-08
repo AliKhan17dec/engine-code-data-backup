@@ -281,8 +281,8 @@ jeep: {
       serviceBulletin: "https://www.bmw-tech.org/tsb",
     },
     heroImage: {
-      src: "/bmw-sample-engine.jpg",
-      alt: "BMW N47D20A Engine",
+      src: "/engine-main-image/jeep-engine.webp",
+      alt: "Jeep Engine",
     },
     engines: {
         eam: {

@@ -277,8 +277,8 @@ export const pageData: Record<string, BrandData> = {
 
     "subaru": {
         heroImage: {
-            src: "/bmw-sample-engine.jpg",
-            alt: "BMW N47D20A Engine",
+            src: "/engine-main-image/subaru-engine.webp",
+            alt: "Subaru Engine",
         },
         researchResources: {
             serviceManual: "https://www.bmw-tech.org/goto/manuals/n47",
